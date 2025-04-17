@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./db:/data
+      - ./device:/data
       - ./storage:/var/lib/grafana
       - ./datasources:/etc/grafana/provisioning/datasources
       - ./dashboards:/etc/grafana/provisioning/dashboards

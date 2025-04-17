@@ -13,8 +13,7 @@ import (
 func ScanIface(iface string) string {
 	fmt.Println("Executing scan on interface:", iface)
 
-	cmd := exec.Command("sudo", "arp-scan", "-N", "-x", "-I", iface, "192.168.30.0/24")
-//	"sudo", "arp-scan", "-glNx", "-I", iface
+	cmd := exec.Command("sudo", "arp-scan", "-glNx", "-I", iface)
 
 	out, err := cmd.Output()
 	// fmt.Println(out)
@@ -26,20 +25,6 @@ func ScanIface(iface string) string {
 	return string(out)
 }
 
-// func scanStr(str string) string {
-
-// 	args := strings.Split(str, " ")
-// 	cmd := exec.Command("arp-scan", args...)
-
-// 	out, err := cmd.Output()
-// 	slog.Debug(cmd.String())
-
-// 	if error.IfError(err) {
-// 		return string("")
-// 	}
-// 	fmt.Println(out)
-// 	return string(out)
-// }
 
 func parseOutput(text, iface string) []utils.Host {
 	var foundHosts = []utils.Host{}
