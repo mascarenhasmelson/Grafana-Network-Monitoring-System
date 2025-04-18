@@ -35,7 +35,7 @@ This logic is handled in env/env.go:
 By default, the interface is set to eth0.
 If your system uses a different interface (like wlan0 or enp3s0), you should set the IFACES environment variable before running the project.
 
-First start the Backend code by running main.go first
+Start the backend by running main.go first using the command: **go run main.go**
 ``` go run main.go```
 
 🐳 Start the services with Docker Compose
