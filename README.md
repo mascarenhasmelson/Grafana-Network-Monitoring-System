@@ -1,35 +1,7 @@
 # Grafana Network Monitoring System
 Grafana Network Monitoring System is a lightweight network monitoring tool that scans devices connected to your Local Area Network (LAN) and displays their online/offline status in real-time using Grafana dashboards.
 
-
-Project structure/
-├── Backend/
-│   ├── internal/
-│   │   ├── arp/
-│   │   │   └── arp.go
-│   │   ├── db/
-│   │   │   └── connect.go
-│   │   ├── dnsfunc/
-|   |   |   └── function.go
-│   │   ├── env/
-│   │   │   └── env.go
-│   │   ├── error/
-│   │   │   └── error.go
-│   │   ├── routinecheck/
-|   |   |    └── scan-routine.go
-│   │   └── utils/
-|   |   |     └── utils.go
-│   ├── go.mod
-│   ├── go.sum
-│   └── main.go
-├── dashboards/
-├── datasources/
-├── device/
-│   └── device.db  ← ( DB file location)
-├── Image/
-├── storage/
-├── docker-compose.yml
-└── README.md
+![Backend Architecture](./Image/Backend.PNG)
 
 Note: Before running this project, make sure to update the project structure and file paths (especially the database path in db/connect.go) according to your local environment.
 
@@ -63,6 +35,8 @@ This logic is handled in env/env.go:
 By default, the interface is set to eth0.
 If your system uses a different interface (like wlan0 or enp3s0), you should set the IFACES environment variable before running the project.
 
+First start the Backend code by running main.go first
+``` go run main.go```
 
 🐳 Start the services with Docker Compose
 
@@ -78,3 +52,8 @@ After the services are up and running, open your browser and navigate to:
 
 * Username: admin
 * Password: admin
+
+
+### 📘 Grafana Dashboard Overview
+
+![Grafana](./Image/Dashboard.png)
