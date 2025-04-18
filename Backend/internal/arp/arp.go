@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"test/internal/utils"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/utils"
 	"time"
 )
 

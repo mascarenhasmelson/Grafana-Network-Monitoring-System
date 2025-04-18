@@ -1,4 +1,4 @@
-module test
+module github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend
 
 go 1.22.0
 
