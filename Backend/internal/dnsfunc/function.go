@@ -5,7 +5,7 @@ import (
 	"slices"
 	"strconv"
 	"strings"
-	"test/internal/utils"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/utils"
 )
 
 func getHostByID(idStr string, hosts []utils.Host) (oneHost utils.Host) {

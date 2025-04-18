@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"sync"
-	"test/internal/error"
-	"test/internal/utils"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/error"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/utils"
 
 	"github.com/jmoiron/sqlx"
 	_ "modernc.org/sqlite"

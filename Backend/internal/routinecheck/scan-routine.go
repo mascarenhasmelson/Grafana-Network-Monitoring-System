@@ -6,11 +6,11 @@ import (
 	// "os"
 	"time"
 
-	"test/internal/arp"
-	"test/internal/db"
-	"test/internal/dnsfunc"
-	"test/internal/env"
-	"test/internal/utils"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/arp"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/db"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/dnsfunc"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/env"
+	"github.com/mascarenhasmelson/Grafana-Network-Monitoring-System/Backend/internal/utils"
 )
 
 var (
