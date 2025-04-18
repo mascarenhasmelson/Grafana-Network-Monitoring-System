@@ -26,7 +26,7 @@ func ConnectDB() (*sqlx.DB, bool) {
 	// allHosts []utils.Host
 	fmt.Println("connectdb")
 	var ok bool
-	db, err := sqlx.Open("sqlite", "file:/home/panipuri/Desktop/workspace/grafana/grafana-NMS/db/device.db?mode=rw")
+	db, err := sqlx.Open("sqlite", "file:/home/user/Desktop/workspace/grafana/grafana-NMS/device/device.db?mode=rw")
 	error.IfError(err)
 
 	err = db.Ping()
