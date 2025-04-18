@@ -10,7 +10,7 @@ func GetEnv() string {
 		envVar := os.Getenv("IFACES")
 
 		if envVar == "" {
-			envVar = "wlp0s20f3"
+			envVar = "eth0"
 		}
 
 		return envVar
